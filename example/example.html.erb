@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <% # corner_style returns CSS for a rounded-corner div. -%>
+    <% # All the classes will begin with example, so, example-content -%>
+    <% # Possible options:
+       # :background, defaults to #ffffff
+       # :image, defaults to 'corners.png'
+       # :border_color, defaults to 'black'
+       # :border_width, defaults to '3px'
+       # :radius, defaults to '16px'
+       -%>
+    <%=corner_style 'example', :background=>"#dddddd" -%>
+    <style type="text/css">
+      <% # .example-rounded is the whole block -%>
+      .example-rounded {width:400px;}
+      <% # .example-content is just the part with your text -%>
+      .example-content {padding: 5px;}
+    </style>
+  </head>
+  <body>
+    <% in_rounded_corners 'example' do -%>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet, tortor in molestie placerat, massa mi congue lectus, at tempus mi quam quis risus. Quisque auctor. Nulla imperdiet consequat sapien. Pellentesque ornare elementum dolor. Sed cursus. Praesent lacus. Suspendisse facilisis. Nam non eros eu nunc cursus laoreet. Aliquam erat volutpat. Donec nec risus sed neque feugiat pharetra. Integer ut odio. Integer metus.
+    <% end -%>
+  </body>
+</html>

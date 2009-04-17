@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <%=corner_style 'example' -%>
+    <style type="text/css">
+      .example-rounded {width:400px;}
+      .example-content {padding: 5px;}
+    </style>
+  </head>
+  <body>
+    <% in_rounded_corners 'example' do -%>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet, tortor in molestie placerat, massa mi congue lectus, at tempus mi quam quis risus. Quisque auctor. Nulla imperdiet consequat sapien. Pellentesque ornare elementum dolor. Sed cursus. Praesent lacus. Suspendisse facilisis. Nam non eros eu nunc cursus laoreet. Aliquam erat volutpat. Donec nec risus sed neque feugiat pharetra. Integer ut odio. Integer metus.
+    <% end -%>
+  </body>
+</html>
