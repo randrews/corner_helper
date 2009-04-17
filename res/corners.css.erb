@@ -1,0 +1,37 @@
+.<%=p[:class]%>-rounded
+{
+  background: <%=p[:background]%>;
+  position: relative;
+}
+.<%=p[:class]%>-corner
+{
+  position:absolute;
+  width:<%=p[:radius]%>;
+  height:<%=p[:radius]%>;
+  background-image:url(<%=image_path(p[:image])%>);
+  }
+
+.<%=p[:class]%>-content
+{ 
+  border: <%=p[:border_width]%> solid <%=p[:border_color]%>;
+}
+
+.<%=p[:class]%>-ul {top:0;left:0;}
+
+.<%=p[:class]%>-ur
+{ 
+  top:0;right:0;
+  background-position: <%=p[:radius]%> 0px;
+  }
+
+.<%=p[:class]%>-ll 
+{
+  bottom:0;left:0;
+  background-position: 0px <%=p[:radius]%>;
+  }
+
+.<%=p[:class]%>-lr 
+{
+  bottom:0;right:0;
+  background-position: <%=p[:radius]%> <%=p[:radius]%>; 
+  }
